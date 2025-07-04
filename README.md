@@ -118,7 +118,7 @@ ros2 topic echo /bms/cell_voltages
 Include the header and initialize the `BMS` class with a `Stream` object:
 
 ```cpp
-#include "jbd_bms.h"
+#include <jbd_bms.h>
 
 HardwareSerial serial(2);  // or use SoftwareSerial if needed
 BMS bms(serial);
