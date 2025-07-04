@@ -71,25 +71,7 @@ pip install rclpy
 
 ---
 
-## Usage
-
-### Arduino & ESP32 (Library Examples)
-
-Once the library is installed, you can access the examples directly from the Arduino IDE.
-
-1.  Go to **File \> Examples \> JBD BMS Toolkit**.
-
-2.  Choose one of the following examples:
-
-    - **avr:** A basic UART example for boards like the Arduino Uno.
-    - **esp32:** A UART example for ESP32.
-    - **esp32_ble:** Demonstrates connecting to the BMS over BLE on an ESP32.
-
-3.  Make sure to update the serial port or BLE address in the sketch to match your setup.
-
-4.  Upload and open the Serial Monitor to see the BMS data.
-
-### Python Scripts (for PC)
+## Python Usage
 
 The Python scripts are located in the `python_scripts/` directory.
 
@@ -126,10 +108,6 @@ ros2 topic echo /bms/cell_voltages
 
 - `/bms/basic_info` is published as a `std_msgs/String`.
 - `/bms/cell_voltages` is published as a `std_msgs/Float32MultiArray`.
-
----
-
-Sure! Here's a refined **Usage** section for your `README` written in the format you specified, tailored to your `BMS` class and how it works over both **Serial** and **BLE**:
 
 ---
 
